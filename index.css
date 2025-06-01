@@ -611,3 +611,73 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+
+/* --------------------------------------- */
+/* ----- Courses ----- */
+/* --------------------------------------- */
+
+.courses__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gutter-medium);
+}
+
+.course__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1c1c;
+  border: 1px solid var(--white-1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.course__item:hover {
+  transform: scale(1.02);
+}
+
+.course__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.course__text {
+  padding: var(--gutter-small);
+}
+
+.course__text h3 {
+  font-size: var(--font-size-medium);
+  margin-bottom: 1rem;
+}
+
+.course__text p {
+  font-size: var(--font-size-small);
+}
+
+.course__author {
+  font-size: 1.4rem;
+  color: #aaa;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+
+/* --------------------------------------- */
+/* ----- About Me Mini Section ----- */
+/* --------------------------------------- */
+
+.aboutme {
+  text-align: left;
+  background-color: #111; /* opcional, para diferenciar */
+}
+
+.aboutme p {
+  max-width: var(--container-medium-width);
+  margin: 0 auto;
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
+  color: var(--white-1);
+}
